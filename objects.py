@@ -19,7 +19,7 @@ def closing_image_apply(contours: 'cv2.imread') -> 'cv2.imread':
 
 
 def find_contours(closing_image: 'cv2.imread') -> tuple:
-    """Try find external contours"""
+    """Try to find external contours"""
     return cv2.findContours(closing_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
 
